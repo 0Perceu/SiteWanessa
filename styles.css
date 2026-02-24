@@ -211,6 +211,11 @@ h2 {
   box-shadow: 0 10px 20px rgba(111, 60, 49, 0.25);
 }
 
+.btn.whatsapp {
+  background: linear-gradient(135deg, #128c7e, #25d366);
+  box-shadow: 0 10px 20px rgba(18, 140, 126, 0.28);
+}
+
 .btn.ghost {
   border-color: var(--brand);
   color: var(--brand-strong);
@@ -307,6 +312,42 @@ h2 {
   font-size: 0.92rem;
 }
 
+.testimonial-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.testimonial-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.testimonial-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow);
+}
+
+.testimonial-content {
+  margin: 0;
+}
+
+.testimonial-content p {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+}
+
+.testimonial-content cite {
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 800;
+}
+
 .faq-list {
   display: grid;
   gap: 0.7rem;
@@ -346,6 +387,18 @@ summary {
 
   .profile-photo {
     width: min(320px, 100%);
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .testimonial-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .testimonial-photo {
+    width: min(280px, 100%);
     height: auto;
     aspect-ratio: 1 / 1;
   }
